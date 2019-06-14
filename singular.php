@@ -32,17 +32,7 @@ if ( have_posts() )  :
 						<div class="meta">
 
 							<?php 
-							echo __( 'In', 'hamilton' ) . ' '; the_category( ', ' ); 
-
-							if ( comments_open() ) : ?>
-								<span>&bull;</span>
-								<?php comments_popup_link( 
-									__( 'Add Comment', 'hamilton' ), 
-									__( '1 Comment', 'hamilton' ), 
-									sprintf( __('%s Comments', 'hamilton' ), '%' ), 
-									'' 
-								); ?>
-							<?php endif; ?>
+							echo __( 'In', 'hamilton' ) . ' '; the_category( ', ' ); ?>
 
 						</div>
 
@@ -82,7 +72,9 @@ if ( have_posts() )  :
 			<?php endif; ?>
 
 		</div> <!-- .post -->
-
+		<div class="related-posts-wrapper section-inner">
+			<h1 class="title">Other projects</h1>
+		</div>
 		<?php 
 		
 		if ( get_post_type() == 'post' ) get_template_part( 'related-posts' );

@@ -13,6 +13,7 @@ This is a child theme of Hamilton theme, you will need the Parent Theme in you W
 
 1. Upload the theme
 2. Activate the theme
+3. Use it in the Dark mode
 
 All theme specific options are handled through the WordPress Customizer.
 

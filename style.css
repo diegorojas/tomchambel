@@ -876,6 +876,9 @@ a {
 	margin-top: 25px;
 }
 
+.single .page-header {
+	margin: 0 auto;
+}
 
 /* Meta ----------------------------- */
 
@@ -887,6 +890,10 @@ a {
 
 .dark-mode .meta {	
 	color: rgba( 255, 255, 255, .35 );
+}
+
+.single .meta {
+    margin-top: 10px;
 }
 
 .meta span {

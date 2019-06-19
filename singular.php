@@ -23,8 +23,7 @@ if ( have_posts() )  :
 
 						<div class="meta">
 
-							<?php 
-							echo __( 'In', 'hamilton' ) . ' '; the_category( ', ' ); ?>
+							<?php echo the_category( ', ' ); ?>
 
 						</div>
 

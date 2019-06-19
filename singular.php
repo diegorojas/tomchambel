@@ -1,6 +1,6 @@
 <?php 
 
-get_header();
+get_header('single');
 
 if ( have_posts() )  : 
 
@@ -9,14 +9,6 @@ if ( have_posts() )  :
 		<div <?php post_class( 'section-inner' ); ?>>
 		
 			<header class="page-header section-inner'; ?>">
-
-					<?php if ( has_post_thumbnail() ) : ?>
-
-				<div class="featured-image">
-					<?php the_post_thumbnail( 'hamilton_fullscreen-image' ); ?>
-				</div>
-
-					<?php endif; ?>
 			
 				<div>
 			

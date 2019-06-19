@@ -20,8 +20,26 @@
 			wp_body_open(); 
 		}
 		?>
-    
+
+		<?php if ( have_posts() )  : 
+
+	while ( have_posts() ) : the_post(); ?>
+
+        			<?php if ( has_post_thumbnail() ) : ?>
+
+				<div class="full-image" style="background-image: url(<?php the_post_thumbnail_url( $size = 'hamilton_fullscreen-image' ); ?>);">
+
+					<?php endif; ?>
+
+		<?php endwhile; endif; ?>
+
+		<?php
+            wp_reset_postdata();
+        ?>
+
+
         <header class="section-inner site-header group">
+
 		
 			<?php if ( function_exists( 'the_custom_logo' ) && get_theme_mod( 'custom_logo' ) ) :
 				$logo = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' );
@@ -81,7 +99,6 @@
 				endif;
 				?>
 			</ul>
-
         </header> <!-- header -->
 		
 		<?php 
@@ -135,3 +152,5 @@
 			</footer> -->
 			
 		</nav>
+
+		</div>

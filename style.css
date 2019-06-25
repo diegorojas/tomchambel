@@ -2205,13 +2205,11 @@ tbody > tr:nth-child(odd) { background: rgba( 0, 0, 0, 0.05 ); }
 
 .site-footer { 
 	padding: 100px 0;
-	text-align: center;
 }
 
 .site-footer p { 
     font-weight: 300;
     line-height: 1;
-    text-align: center;
     font-size: 0.9em;
 }
 
@@ -2253,6 +2251,23 @@ tbody > tr:nth-child(odd) { background: rgba( 0, 0, 0, 0.05 ); }
 	border-bottom-color: rgba( 255, 255, 255, .35 );
 }
 
+.site-footer .metade {
+	width: 50%;
+	float: left;
+}
+
+.site-footer .credits p {
+	text-align: left;
+}
+
+.site-footer .menu .menu-social-container {
+	float: right;
+}
+
+.site-footer ul#menu-social li{
+	float: left;
+	margin-left: 10px;
+}
 
 /* -------------------------------------------------------------------------------- */
 /*	11.	Media Queries

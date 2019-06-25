@@ -2475,21 +2475,26 @@ tbody > tr:nth-child(odd) { background: rgba( 0, 0, 0, 0.05 ); }
 	/* BASE TYPOGRAPHY */
 	
 	.title {
-		font-size: 30px;
+		font-size: 20px;
 	}
 	
 	
 	/* Site Header ----------------------------- */
 	
 	.site-header {
-		padding: 50px 0;
+		padding: 40px 0 20px;
 	}
 
 	.wp-custom-logo .site-header {
 		padding: 35px 0;
 	}
+
 	
-	
+	.full-image {
+	    height: 400px;
+	}
+
+
 	/* Navigation ----------------------------- */
 	
 	.site-nav {
@@ -2498,7 +2503,7 @@ tbody > tr:nth-child(odd) { background: rgba( 0, 0, 0, 0.05 ); }
 	}
 	
 	.site-nav ul:first-child li {
-		font-size: 30px;
+		font-size: 20px;
 	}
 	
 	.site-nav ul + ul li {
@@ -2565,12 +2570,12 @@ tbody > tr:nth-child(odd) { background: rgba( 0, 0, 0, 0.05 ); }
 	.posts {
 		margin: -10px 0;
 		position: relative;
-			left: calc( 50% - 50vw + 2.5px );
+		left: calc( 50% - 50vw + 2.5px );
 		width: calc( 100vw - 5px );
 	}
 	
 	.post-preview {
-		padding: 5px;
+		padding: 0px;
 	}
 	
 	.post-preview header {
@@ -2587,7 +2592,7 @@ tbody > tr:nth-child(odd) { background: rgba( 0, 0, 0, 0.05 ); }
 	}
 	
 	.post-preview h2 {
-		font-size: 20px;
+		font-size: 17px;
 	}
 	
 	/* PAGINATION */
@@ -2699,11 +2704,11 @@ tbody > tr:nth-child(odd) { background: rgba( 0, 0, 0, 0.05 ); }
 	/* Site Footer ----------------------------- */
 	
 	.site-footer {
-		padding: 50px 0;
+		padding: 40px 0;
 	}
-	
-	.site-footer p + p {
-		font-size: 16px;
+
+	.site-footer p {
+    font-size: 0.7em;
 	}
 	
 

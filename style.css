@@ -967,10 +967,17 @@ a {
 	width: 100%;
 }
 
-.wp-block-image .entry-content .alignfull {
-	margin: 0 auto !important;
+.single .wp-block-image.alignfull {
+	margin-bottom: 0;
 }
 
+.single .entry-content {
+	margin-top: -70px;
+}
+
+.single .entry-content p {
+    margin-top: 35px;
+}
 
 /* Linked Pages ----------------------------- */
 

@@ -27,6 +27,52 @@
 
         			<?php if ( has_post_thumbnail() ) : ?>
 
+		<nav class="site-nav"<?php echo $bg_declaration; ?>>
+		
+			<div class="section-inner menus group">
+		
+				<?php 
+				if ( has_nav_menu( 'primary-menu' ) ) :
+					wp_nav_menu( array( 
+						'container' 		=> '',
+						'theme_location' 	=> 'primary-menu'
+					) ); 
+				else : ?>
+					<ul>
+						<?php
+						wp_list_pages( array(
+							'container' => '',
+							'title_li' 	=> ''
+						) );
+						?>
+					</ul>
+					<?php 
+				endif;
+				
+				if ( has_nav_menu( 'secondary-menu' ) ) {
+					wp_nav_menu( array( 
+						'container' 		=> '',
+						'theme_location' 	=> 'secondary-menu'
+					) ); 
+				}
+				?>
+			
+			</div>
+		
+			<!-- <footer<?php // echo $bg_declaration; ?>>
+			
+				 <div class="section-inner">
+
+					<p>&copy; <?php // echo date( 'Y' ); ?> <a href="<?php // echo esc_url( home_url() ); ?>" class="site-name"><?php // bloginfo( 'name' ); ?></a></p>
+					<p><?php // _e( 'Theme by', 'hamilton' ); ?> <a href="https://www.andersnoren.se">Anders Nor&eacute;n</a></p> 
+				
+				</div> 
+
+			</footer> -->
+			
+		</nav>
+
+
 				<div class="full-image" style="background-image: url(<?php the_post_thumbnail_url( $size = 'hamilton_fullscreen-image' ); ?>);">
 
 					<?php endif; ?>
@@ -108,49 +154,6 @@
 		}
 		?>
 		
-		<nav class="site-nav"<?php echo $bg_declaration; ?>>
-		
-			<div class="section-inner menus group">
-		
-				<?php 
-				if ( has_nav_menu( 'primary-menu' ) ) :
-					wp_nav_menu( array( 
-						'container' 		=> '',
-						'theme_location' 	=> 'primary-menu'
-					) ); 
-				else : ?>
-					<ul>
-						<?php
-						wp_list_pages( array(
-							'container' => '',
-							'title_li' 	=> ''
-						) );
-						?>
-					</ul>
-					<?php 
-				endif;
-				
-				if ( has_nav_menu( 'secondary-menu' ) ) {
-					wp_nav_menu( array( 
-						'container' 		=> '',
-						'theme_location' 	=> 'secondary-menu'
-					) ); 
-				}
-				?>
-			
-			</div>
-		
-			<!-- <footer<?php // echo $bg_declaration; ?>>
-			
-				 <div class="section-inner">
 
-					<p>&copy; <?php // echo date( 'Y' ); ?> <a href="<?php // echo esc_url( home_url() ); ?>" class="site-name"><?php // bloginfo( 'name' ); ?></a></p>
-					<p><?php // _e( 'Theme by', 'hamilton' ); ?> <a href="https://www.andersnoren.se">Anders Nor&eacute;n</a></p> 
-				
-				</div> 
-
-			</footer> -->
-			
-		</nav>
 
 		</div>
